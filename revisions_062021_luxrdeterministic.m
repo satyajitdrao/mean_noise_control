@@ -1,14 +1,14 @@
 %% semi-analytical
 f = 460; % fold change
-Rtmin = 25; % molecules/cell: 24 for weakest RBS
-Ka = .02*Rtmin; % molecules
-K = 8.5*25; %molecules
+Rtmin = 2.5; % molecules/cell
+Ka = 5; % molecules
+K = 100; %molecules
 n = 2;
 kdil = 3.1e-4;
 A = 0;
 kr = 0.001; kf1 = (kr)/Ka;
 
-phi = 0.6/kdil; % kdif/kdil;
+phi = 1;
 ahlrange = logspace(-4,4,100); % nM % convert to molecules
 % for i = 1:length(ahlrange)
 %     A = ahlrange(i);
